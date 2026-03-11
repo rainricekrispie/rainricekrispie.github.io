@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cubic Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
 
+<body>
+    <div class="maindiv">
+        <h1>
+            Cubic Formula Solver
+            <br />
+            ax&#179; + bx&#178; + cx + d = 0
+        </h1>
+        <br />
+        <form id="mainform">
+            <input for="aname" value="1" name="aname" type="number" placeholder="Input A" required>
+            <input for="bname" value="-6" name="bname" type="number" placeholder="Input B" required>
+            <input for="cname" value="11" name="cname" type="number" placeholder="Input C" required>
+            <input for="dname" value="-6" name="dname" type="number" placeholder="Input D" required>
+            <input type="submit" class="submit-button" value="Calculate">
+        </form>
+        <br/>
+        <div id="result">
+          <table>
+            <tr><th>p</th><th id="pv">100</th></tr>
+            <tr><th>q</th><th id="qv">100</th></tr>
+            <tr><th>discriminant</th><th id="dv">100</th></tr>
+            <tr id="v"><td>Value</td><td>X</td>
+            </tr><tr><th>Root1</th><th id="r1v">100</th></tr>
+            <tr><th>Root2</th><th id="r2v">100</th>
+            </tr><tr><th>Root3</th><th id="r3v">100</th></tr>
+          </table>
+            <canvas id="graph" width="400" height="400"></canvas>
+            <button onclick="zoomIn()">+</button>
+            <button onclick="zoomOut()">-</button>
+        </div>
+    </div>
+    <script src="script.ts"></script>
+</body>
+
+</html>
